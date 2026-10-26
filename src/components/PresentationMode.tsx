@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 import { CROSSWORD_ITEMS, VERTICAL_KEY_WORD } from '@/data/puzzleData';
 import { sound } from '@/utils/soundEffects';
 import confetti from 'canvas-confetti';
-import { X, Eye, EyeOff, Volume2, KeyRound } from 'lucide-react';
+import { X, Eye, Volume2, KeyRound } from 'lucide-react';
 
 interface PresentationModeProps {
   onExit: () => void;

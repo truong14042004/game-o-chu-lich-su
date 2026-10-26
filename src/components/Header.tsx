@@ -113,7 +113,11 @@ export const Header: React.FC<HeaderProps> = ({
                 sound.playTileClick();
               }}
               title="Chế độ Trình chiếu Lớp học"
-              className="p-2 rounded-xl border border-red-200 bg-red-50 text-red-700 hover:bg-red-100 transition-colors shadow-xs"
+              className={`p-2 rounded-xl border transition-colors shadow-xs ${
+                presentationMode
+                  ? 'border-red-500 bg-red-600 text-white shadow-md'
+                  : 'border-red-200 bg-red-50 text-red-700 hover:bg-red-100'
+              }`}
             >
               <Monitor className="w-4 h-4" />
             </button>

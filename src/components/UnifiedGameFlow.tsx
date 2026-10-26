@@ -98,8 +98,10 @@ export const UnifiedGameFlow: React.FC<UnifiedGameFlowProps> = ({
 
   // Xáo trộn thứ tự 12 câu hỏi khi tải trang để không theo thứ tự 1 -> 12
   useEffect(() => {
-    const shuffled = [...CROSSWORD_ITEMS].sort(() => Math.random() - 0.5);
-    setShuffledQuestions(shuffled);
+    const timer = setTimeout(() => {
+      setShuffledQuestions([...CROSSWORD_ITEMS].sort(() => Math.random() - 0.5));
+    }, 0);
+    return () => clearTimeout(timer);
   }, []);
 
   // Tính các ô trên đường thẳng
