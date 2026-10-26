@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🇻🇳 Minigame Giải Ô Chữ Lịch Sử Đảng
 
-## Getting Started
+![CI / CD Pipeline](https://github.com/truong14042004/game-o-chu-lich-su/actions/workflows/ci.yml/badge.svg)
 
-First, run the development server:
+> **Chủ đề**: *Diệt giặc dốt (1945) đến Phong trào Bình dân học vụ số*  
+> Trò chơi giáo dục tương tác cao với thiết kế giao diện sáng trang nhã, cột từ khóa dọc thẳng tắp, hỗ trợ trình chiếu và lớp học.
+
+---
+
+## ✨ Tính Năng Nổi Bật
+
+- **Cột Từ Khóa Dọc Cố Định**: Cột từ khóa hàng dọc **"BÌNH DÂN HỌC VỤ SỐ"** được căn thẳng tắp tại cột 7, nổi bật với biểu tượng hoa sen và viền vàng.
+- **Tự Do Nhập Trực Tiếp Vào Từng Ô**: Người chơi có thể gõ từng chữ cái không dấu trực tiếp vào từng ô của hàng ngang hoặc gõ đáp án có dấu đầy đủ vào ô kiểm tra bên câu hỏi.
+- **12 Câu Hỏi Đảo Thứ Tự**: Thứ tự 12 câu hỏi được xáo trộn tự động, người chơi tự tìm đọc câu hỏi và ghép vào hàng ô chữ tương ứng mà không bị lộ đáp án/gợi ý.
+- **Ma Trận Chữ Cái 12x12**: Kéo chọn các từ khóa ẩn trên ma trận đa hướng (ngang, dọc, chéo).
+- **Âm Thanh & Hiệu Ứng GSAP**: Hoạt ảnh lật ô 3D, confetti pháo hoa ăn mừng, hiệu ứng âm thanh click, đúng, sai sống động.
+- **Chế Độ Trình Chiếu Lớp Học**: Tối ưu hiển thị cho máy chiếu, giảng đường và màn hình tương tác.
+- **Quy Trình CI/CD Tự Động**: Tích hợp GitHub Actions tự động kiểm tra Linting, TypeScript và Build trên mỗi lần push hoặc tạo PR.
+
+---
+
+## 🚀 Bắt Đầu Nhanh (Local Development)
 
 ```bash
+# Cài đặt thư viện
+npm install
+
+# Khởi chạy server phát triển
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Mở trình duyệt tại [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Kiểm Tra Mã Nguồn (CI / CD)
 
-## Learn More
+```bash
+# Kiểm tra ESLint
+npm run lint
 
-To learn more about Next.js, take a look at the following resources:
+# Kiểm tra kiểu TypeScript
+npm run type-check
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Tạo bản build tối ưu
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 🌐 Triển Khai (Deployment)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Dự án đã sẵn sàng triển khai trên **Vercel**:
+1. Đăng nhập [Vercel](https://vercel.com).
+2. Chọn **Add New Project** ➔ Chọn repository `truong14042004/game-o-chu-lich-su`.
+3. Nhấn **Deploy**. Mỗi lần push lên nhánh `master`, Vercel sẽ tự động deploy bản mới nhất!
